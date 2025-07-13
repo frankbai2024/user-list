@@ -1,0 +1,47 @@
+.container {
+  width: 600px;
+  height: 600px;
+  overflow: scroll;
+  background-color: #7986cb;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 10px auto; /*水平居中*/
+}
+
+h3,
+.user_form,
+.btn_group {
+  text-align: center;
+}
+.user_form {
+  /* background-color: #f9dd94; */
+  margin-bottom: 20px;
+}
+button {
+  color: #fff;
+  background-color: #c2d352;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+button:hover {
+  background-color: #434343;
+  transition: all 0.5s ease;
+}
+ul li {
+  list-style: none; /*无圆点*/
+  margin-bottom: 20px;
+  counter-increment: item;
+}
+ul li::before {
+  content: counter(item);
+  background-color: #f9dd94;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
